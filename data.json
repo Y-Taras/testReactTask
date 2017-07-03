@@ -1,0 +1,134 @@
+{
+    "products": [
+        {
+            "id": "01f",
+            "name": "Giant Ultra-Premium Honeycrisp Apple",
+            "price": 3.99,
+            "description": "True to its name, the honeycrisp is sweet and crunchy with a warm, yellow interior and an attractive yellow-red streaked skin. We love this healthy treat packed in a lunch, sliced for after-school snacks or as a take-along for your anytime snacking.",
+            "image": "01_apple.jpg",
+            "manufacturer": "USA",
+            "category": "fruits",
+            "amount": 20
+        },
+        {
+            "id": "02f",
+            "name": "Avocados from Mexico Organic Hass Avocados, Ready-to-Eat",
+            "price": 5.99,
+            "description": "These gorgeous Hass avocados are shipped to you ready to eat! Don't delay in enjoying the buttery texture and rich, slightly sweet flavor. We love to plump up burritos, sandwiches and salads with these 'butter pears', but they also make a satisfying addition to health smoothies to start your day off right.",
+            "image": "02_avocado.jpg",
+            "manufacturer": "Mexico",
+            "category": "fruits",
+            "amount": 13
+        },
+        {
+            "id": "03f",
+            "name": "Organic Seedless Watermelon",
+            "price": 9.99,
+            "description": "All the sweetness, crunch, and knockout juiciness of the classic summertime melon. Cubed or balled, this melon was made for fruit salad. In wedges, it's ideal for young kids  no worries about the seeds. We also like to serve it at indoor parties where seed-spitting contests aren't allowed.",
+            "image": "03_watermelon.jpg",
+            "manufacturer": "USA and Mexico",
+            "category": "fruits",
+            "amount": 54
+        },
+        {
+            "id": "04f",
+            "name": "Organic Honeydew Melon",
+            "price": 5.99,
+            "description": "The most versatile melon around, the aptly named honeydew is both sweet and succulent. Its celery-colored flesh looks like a green-tinged precious stone. We like the contrast of flavors when the honeydew is wrapped with a slice of prosciutto.",
+            "image": "04_melon.jpg",
+            "manufacturer": "USA",
+            "category": "fruits",
+            "amount": 21
+        },
+        {
+            "id": "05f",
+            "name": "Green Guavas",
+            "price": 3.99,
+            "description": "If you could pack a strawberry, a pineapple, and a banana in a lemon-sized package, you'd have a guava. Its texture is papaya-like, and the aroma it exudes is strong and fragrant. The skin is a bonus, soft and tart, with a surprising clove flavor.",
+            "image": "05_guava.jpg",
+            "manufacturer": "USA",
+            "category": "fruits",
+            "amount": 7
+        },
+        {
+            "id": "01v",
+            "name": "Organic Carrots",
+            "price": 3.49,
+            "description": "Intensely sweet. They're super-crunchy raw. Cut them into disks and flash-steam. Five minutes does the trick. Trim the greens so they don't suck the moisture out of the eating part.",
+            "image": "01_carrot.jpg",
+            "manufacturer": "USA",
+            "category": "vegetables",
+            "amount": 99
+        },
+        {
+            "id": "02v",
+            "name": "Cubanelle Pepper",
+            "price": 3.99,
+            "description": "With its sweet garden crunch and round shape, this colorful pepper is similar to your average green bell pepper, but a bit more exotic. Substitute it for bell pepper in any recipe. Despite its name, which means \"little Cuban,\" this sweet pepper is actually a recent Italian immigrant. The Cubanelle is also called an Italian frying pepper, the kind you put in sausage-and-pepper sandwiches.",
+            "image": "02_pepper.jpg",
+            "manufacturer": "USA",
+            "category": "vegetables",
+            "amount": 41
+        },
+        {
+            "id": "03v",
+            "name": "Lancaster Farm Fresh Cooperative Local Organic Broccoli",
+            "price": 3.99,
+            "description": "We think of broccoli as one of the ultimate vegetables. It has a cabbagelike flavor and a satisfying crunch. It's nutritious, low in calories, available year-round, and hardy. For all these reasons, broccoli is extremely popular. Steam it, stir-fry it, sauté it, bake it in casseroles, puree it in soups, or dunk it raw in dressing or hummus.",
+            "image": "03_broccoli.jpg",
+            "manufacturer": "USA",
+            "category": "vegetables",
+            "amount": 5
+        },
+        {
+            "id": "04v",
+            "name": "Fresh Wild Porcini Mushrooms",
+            "price": 7.99,
+            "description": "They're called cèpes in France and porcinis in Italy, but we might just call them delicious. The mushroom's hearty, nutty flavor is particularly good in risotto and pasta dishes, omelets and stews. As a side or topping, sauté with garlic and fresh flat-leaf parsley.",
+            "image": "04_porcini.jpg",
+            "manufacturer": "USA",
+            "category": "vegetables",
+            "amount": 11
+        },
+        {
+            "id": "05v",
+            "name": "Jumbo Yellow Onion",
+            "price": 1.49,
+            "description": "Spicy, juicy, baseball-sized bundles of flavor. These pungent staples release their flavor when sautéed, braised, grilled, or roasted. Dredge with flour and deep-fry for decadent onion rings. These tear-inducing onions are usually considered too strong for eating raw.",
+            "image": "05_onion.jpg",
+            "manufacturer": "USA and Mexico",
+            "category": "vegetables",
+            "amount": 19
+        },
+        {
+            "id": "01s",
+            "name": "Wild Jumbo Soft-Shell Crab, Cleaned",
+            "price": 6.99,
+            "description": "Soft-shell crabs are the gourmet potato chip of the seafood world. They aren't a special kind, they're a special phase. When blue crabs shed their shells, they're soft for a brief period until their new shells harden. During that time, the entire crab isn't just edible, it's wonderful — crunchy-tender and sweet. Deep-fry or sauté soft-shell crabs to crispness and serve them in a sandwich or over wilted greens.",
+            "image": "01_crab.jpg",
+            "manufacturer": "USA",
+            "category": "seafood",
+            "amount": 92
+        },
+        {
+            "id": "02s",
+            "name": "Duxbury Oysters",
+            "price": 1.49,
+            "description": "Recognized for their exquisite salty-sweet balance and clean finish, the Duxbury oyster boasts plump meat and a buttery texture throughout all four seasons. This is due to the unique tidal flow of cool, salty, nutrient-rich waters through the bay, which creates the ideal growing environment for oysters. We like to wash these down with a glass of Prosecco.",
+            "image": "02_oyster.jpg",
+            "manufacturer": "USA and Mexico",
+            "category": "seafood",
+            "amount": 91
+        },
+        {
+            "id": "03s",
+            "name": "Wild Cold Water Lobster Tails",
+            "price": 17.99,
+            "description": "Hailing from cold North Atlantic waters, these hearty lobster tails have firm, sweet meat that needs little more than a dish of melted butter to complement. Defrost these shell-on tails in the refrigerator or a cold-water bath, then boil, broil, or steam.",
+            "image": "03_lobster.jpg",
+            "manufacturer": "USA",
+            "category": "seafood",
+            "amount": 15
+        }
+    ]
+}
