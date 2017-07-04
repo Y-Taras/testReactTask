@@ -31,7 +31,7 @@ class Header extends Component {
           </NavbarBrand>
           <Nav className="ml-auto">
             <NavItem onClick={this.toggle}>
-              <FaShoppingCart/>
+              <FaShoppingCart size={36} color='Grey'/>
               {this.props.cartIds.length ? <Badge className="mx-1">{this.props.cartIds.length}</Badge> : null}
             </NavItem>
           </Nav>

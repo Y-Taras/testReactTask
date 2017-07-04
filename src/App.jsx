@@ -17,8 +17,8 @@ const App = () =>
         <Container fluid className="m-3">
         <Switch>
           <Route exact path="/" component={Landing} />
-          <Route path="/:category" component={props => <ProductsList {...props} />} />
-          <Route path="/products/:id" component={props => <ProductDetails {...props} />} />
+          <Route exact path="/:category" component={props => <ProductsList {...props} />} />
+          <Route exact path="/products/:id" component={props => <ProductDetails {...props} />} />
           <Route render={() => <h1>Page not Found</h1>} />
         </Switch>
         </Container>

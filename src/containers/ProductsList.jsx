@@ -3,7 +3,7 @@
 import React, {Component} from "react";
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux';
-import { Row, Col, Input, InputGroup, InputGroupAddon} from 'reactstrap';
+import {Row, Col, Input, InputGroup, InputGroupAddon} from 'reactstrap';
 import InputRange from 'react-input-range';
 
 import {
@@ -25,11 +25,16 @@ class ProductsList extends Component {
   }
 
   renderProductsList() {
+    console.log(this.props);
+
     function mapProductCards(elem) {
       return (
         <ProductCard key={elem.id} elem={elem} cartIds={this.props.cartIds}
                      quantity={this.props.quantity}
-                     addItemToCart={this.props.addItemToCart}/>
+                     addItemToCart={this.props.addItemToCart}
+                     removeItemFromCart={this.props.removeItemFromCart}
+                     history={this.props.history}
+        />
       )
     }
 
@@ -154,6 +159,10 @@ ProductsList.propTypes = {
       category: PropTypes.string
     })
   }).isRequired,
+
+  history: PropTypes.shape({
+    push: PropTypes.func
+  }).isRequired,
   handleFilterTermChange: PropTypes.func.isRequired,
   handleFilterRangeChange: PropTypes.func.isRequired,
   handleInputChange: PropTypes.func.isRequired,
@@ -164,6 +173,7 @@ ProductsList.propTypes = {
   }),
   sortListKey: PropTypes.bool,
   addItemToCart: PropTypes.func.isRequired,
+  removeItemFromCart: PropTypes.func.isRequired,
   cartIds: PropTypes.arrayOf(PropTypes.string).isRequired,
   quantity: PropTypes.objectOf(PropTypes.number).isRequired
 };

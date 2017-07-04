@@ -45,14 +45,20 @@ const handleCart = (state = initialState.addedIds, action) => {
 
 
 const quantityById = (state = initialState.quantityById, action) => {
-
-  if (action.type === ADD_TO_CART) {
-    const {payload} = action;
-    return Object.assign({}, state, {[payload]: (state[payload] || 0) + 1})
+  const {payload} = action;
+  switch (action.type) {
+    case ADD_TO_CART:
+      return Object.assign({}, state, {[payload]: (state[payload] || 0) + 1});
+    case REMOVE_FROM_CART:
+      if (!state[payload]) {
+        return state
+      }
+      return Object.assign({}, state, {[payload]: (state[payload] || 0) - 1});
+    default:
+      return state;
   }
-  return state;
-
 };
+
 
 const apiData = (state = [], action) => {
   if (action.type === ADD_API_DATA) {
