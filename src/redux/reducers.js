@@ -1,5 +1,13 @@
 import {combineReducers} from 'redux';
-import {SET_FILTER_TERM, SET_FILTER_PRICE, SORT_BY_PRICE, ADD_API_DATA, ADD_TO_CART, REMOVE_FROM_CART, SET_PRODUCTS_QUANTITY} from './actions';
+import {
+  SET_FILTER_TERM,
+  SET_FILTER_PRICE,
+  SORT_BY_PRICE,
+  ADD_API_DATA,
+  ADD_TO_CART,
+  REMOVE_FROM_CART,
+  SET_PRODUCTS_QUANTITY
+} from './actions';
 
 const initialState = {
   addedIds: [],
@@ -25,7 +33,6 @@ const sortKey = (state = false, action) => {
     return action.payload;
   }
   return state;
-
 };
 
 const handleCart = (state = initialState.addedIds, action) => {
@@ -40,7 +47,6 @@ const handleCart = (state = initialState.addedIds, action) => {
     default:
       return state
   }
-
 };
 
 
@@ -60,7 +66,6 @@ const quantityById = (state = initialState.quantityById, action) => {
       return state;
   }
 };
-
 
 
 const apiData = (state = [], action) => {

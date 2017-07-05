@@ -1,9 +1,11 @@
 /* eslint no-console: 0 */
+/* eslint-disable spaced-comment */
+
 
 import React, {Component} from "react";
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux';
-import {Row, Col, Input, InputGroup, InputGroupAddon} from 'reactstrap';
+import {Row, Input, InputGroup, InputGroupAddon} from 'reactstrap';
 import InputRange from 'react-input-range';
 
 import {
@@ -61,10 +63,10 @@ class ProductsList extends Component {
     return (
       <div className="landing">
         <Row>
-          <Col>
-            <div className="d-flex flex-row flex-wrap">{this.renderProductsList()}</div>
-          </Col>
-          <Col xs="4" sm="2">
+          <div className="col-10 justify-content-center d-flex flex-row flex-wrap">
+            {this.renderProductsList()}
+          </div>
+          <div className="col-2 justify-content-center">
             <InputGroup>
               <InputGroupAddon>@</InputGroupAddon>
               <input type="text" className="form-control"
@@ -93,7 +95,7 @@ class ProductsList extends Component {
               </InputGroupAddon>
               <InputGroupAddon>Sort by price</InputGroupAddon>
             </InputGroup>
-          </Col>
+          </div>
         </Row>
       </div>
     );

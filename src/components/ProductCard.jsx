@@ -9,27 +9,27 @@ const ProductCard = ({elem, cartIds, quantity, addItemToCart, removeItemFromCart
           history.push(`/products/${elem.id}`)
         }}>
     <CardImg top width="100%" src={`/public/img/${elem.image}`} alt="Card image cap"/>
-    <CardBlock>
+    <CardBlock className="text-center">
       <CardTitle>{elem.name}</CardTitle>
-      <CardText>{elem.price}</CardText>
+      <CardText>{elem.price} $</CardText>
       <CardText>
         {(!quantity[elem.id] || (elem.amount > quantity[elem.id])) ? "isAvailable" : "UnAvailable"}
       </CardText>
-      <CardText>{JSON.stringify(cartIds, null, 4)}</CardText>
-      <CardText>{JSON.stringify(quantity, null, 4)}</CardText>
-      {(cartIds.indexOf(elem.id) === -1) ?
-        <Button
-          onClick={(event) => {
-            event.stopPropagation();
-            addItemToCart(elem.id)
-          }}>
-          Add to Cart</Button> :
-        <Button
-          onClick={(event) => {
-            event.stopPropagation();
-            removeItemFromCart(elem.id)
-          }}
-        >Remove from Cart</Button>}
+      <div className="card-footer">
+        {(cartIds.indexOf(elem.id) === -1) ?
+          <Button
+            onClick={(event) => {
+              event.stopPropagation();
+              addItemToCart(elem.id)
+            }}>
+            Add to Cart</Button> :
+          <Button
+            onClick={(event) => {
+              event.stopPropagation();
+              removeItemFromCart(elem.id)
+            }}
+          >Remove from Cart</Button>}
+      </div>
     </CardBlock>
   </Card>
 );
