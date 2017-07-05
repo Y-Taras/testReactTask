@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {SET_FILTER_TERM, SET_FILTER_PRICE, SORT_BY_PRICE, ADD_API_DATA, ADD_TO_CART, REMOVE_FROM_CART} from './actions';
+import {SET_FILTER_TERM, SET_FILTER_PRICE, SORT_BY_PRICE, ADD_API_DATA, ADD_TO_CART, REMOVE_FROM_CART, SET_PRODUCTS_QUANTITY} from './actions';
 
 export function setFilterTerm(filterTerm) {
   return {type: SET_FILTER_TERM, payload: filterTerm};
@@ -21,6 +21,9 @@ export function removeFromCart(productId) {
   return {type: REMOVE_FROM_CART, payload: productId};
 }
 
+export function setProductsQuantityById(quantityIdPair) {
+  return {type: SET_PRODUCTS_QUANTITY, payload: quantityIdPair};
+}
 
 export function addAPIData(apiData) {
   return {type: ADD_API_DATA, payload: apiData};

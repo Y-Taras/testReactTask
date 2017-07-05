@@ -25,8 +25,6 @@ class ProductsList extends Component {
   }
 
   renderProductsList() {
-    console.log(this.props);
-
     function mapProductCards(elem) {
       return (
         <ProductCard key={elem.id} elem={elem} cartIds={this.props.cartIds}
