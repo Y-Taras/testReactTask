@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types'
-import {Card, CardImg, CardBlock, CardTitle, CardText, Button} from 'reactstrap';
+import {Card, CardImg, CardTitle, CardText, Button} from 'reactstrap';
 
 const ProductCard = ({elem, cartIds, quantity, addItemToCart, removeItemFromCart, history}) => (
 
@@ -9,8 +9,8 @@ const ProductCard = ({elem, cartIds, quantity, addItemToCart, removeItemFromCart
           history.push(`/products/${elem.id}`)
         }}>
     <CardImg top width="100%" src={`/public/img/${elem.image}`} alt="Card image cap"/>
-    <CardBlock className="text-center">
-      <CardTitle>{elem.name}</CardTitle>
+    <div className="text-center" style={{marginTop: 'auto'}}>
+      <CardTitle title={elem.name}>{elem.name}</CardTitle>
       <CardText>{elem.price} $</CardText>
       <CardText>
         {(!quantity[elem.id] || (elem.amount > quantity[elem.id])) ? "isAvailable" : "UnAvailable"}
@@ -30,7 +30,7 @@ const ProductCard = ({elem, cartIds, quantity, addItemToCart, removeItemFromCart
             }}
           >Remove from Cart</Button>}
       </div>
-    </CardBlock>
+    </div>
   </Card>
 );
 export default ProductCard;
