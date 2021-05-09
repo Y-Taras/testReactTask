@@ -24,7 +24,7 @@
     "compression": "1.6.2",
     "cors": "2.8.3",
     "express": "4.15.3",
-    "lodash": "4.17.4",
+    "lodash": "4.17.21",
     "prop-types": "15.5.10",
     "react": "^15.6.1",
     "react-addons-css-transition-group": "^15.6.0",
